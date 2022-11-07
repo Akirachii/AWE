@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<head>
+    <title>Ejercicio7 - Textos</title>
+    <style>
+        body{
+            background-color: rgb(247, 240, 238);
+        } 
+
+        .button{
+            background-color: #bb8282;
+            color: #3d1111; 
+            padding: 10px;
+            border-radius: 10px;
+            -moz-border-radius: 10px;
+            -webkit-border-radius: 10px;
+            margin:15px
+        }
+    </style>
+
+</head>
+<body>
+    <div class="button"; style="padding-left: 30px";>Ejercicio 7</div>
+
+    <h1 style="padding-left:30px; padding-right:30pxx; color: #3d1111;">Examen 1 con Ángel :)</h1>
+
+    <p style="padding-left:30px; padding-right:30pxx;">En el primer examen, teniamos que hacer formaciones espartanas, <b>dependiendo del numero de gente y el tipo de formación</b>, saldran mas o menos tropas de exploración</p>
+
+    <p style="padding-left:30px; padding-right:30pxx;"><pre> <div class="button">
+        #!/bin/bash
+        #AUTORA=PAU GRADOLI
+        nums=$1
+        forma=$2
+        rc=0    
+        if [ $forma = "Thebas" ]; then
+	        let ra=$nums/13
+            let rc=$nums%13
+            echo $ra" phalaunx could be formed."
+        elif [ $forma = "Delphi" ]; then
+	        let ra=$nums
+            let rc=$nums%17
+            echo $ra" phalaunx could be formed."
+        elif [ $forma = "Sparta" ]; then
+	        let ra=$nums/20
+	        let rc=$nums%20
+	        echo $ra" phalaunx could be formed."
+        fi
+        #IF THE PHALANX ARE IDENTIFIED THE REST MUST BE EXPLORER....OR NOT?
+        if [ $rc -le 5 ]; then
+	        echo "You dont have enough explorers sorry :c"
+        else
+	        echo "You have $rc explorers"
+        fi
+        exit 0
+    </pre></p></div>
+
+    <p style="padding-left:30px; padding-right:30pxx;">
+        En dicho challenge, formamos los grupos por máximo de soldados, en caso de <i>Thebas</i>, necesitamos 13 soldados, en caso de <i>Delphi</i>, necesitamos 17 soldados, en caso de <i>Sparta</i>, necesitamos 20 soldados.
+        En cualquier caso, <abbr title="Ángel Berlanas">AB</abbr> demanda que con la gente sobrante se hagan grupos de exploradores, pero si los dichos son inferiores a 6 no podran partir.
+        
+    </p>
+
+
+</body>
+</html>
