@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<head>
+    <title>Task 1</title>
+    <style>
+        body{
+            background-color: rgb(247, 240, 238);
+        } 
+
+        .button{
+            background-color: #bb8282;
+            color: #3d1111;
+            padding: 10px;
+            border-radius: 10px;
+            -moz-border-radius: 10px;
+            -webkit-border-radius: 10px;
+            margin:15px
+        }
+        body {
+            background-color: blanchedalmond;
+        }
+
+        label {
+            padding: 12px 12px 12px 0;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="button"><h1>COMPLETE THE QUESTIONS</h1></div>
+
+    <form method="get" action="" target="_blank">
+
+        <div>
+            <label for="name">NAME:</label>
+            <input id="name" type="text" name="name" maxlength="50" placeholder="WRITE YOUR NAME">
+        </div>
+        <div>
+            <label for="apellidos">SURNAME:</label>
+            <input id="apellidos" type="text" name="apellidos" maxlength="50" placeholder="WRITE YOUR SURNAME">
+        </div>
+        <div>
+            <label for="gender">GENDER:</label>
+            <input type="radio" name="gender" value="MEN" id="gender">MEN
+            <input type="radio" name="gender" value="WOMEN" id="gender">WOMEN
+        </div>
+        <div>
+            <label for="email">MAIL:</label>
+            <input type="email" name="MAILS" id="iemail" placeholder="WRITE YOUR EMAIL">
+        </div>
+        <div>
+            <label for="notificacion"><input type="checkbox" name="notificacion" value="FIRST" id="notificacion" checked="checked">
+                I wish to recieve notifications
+            </label>
+        </div>
+        <div>
+            <label for="TERMS"><input type="checkbox" name="TERMS" value="SECOND" id="TERMS">
+                I declare that I have read and accept the general conditions of the program and the regulations on data protection
+            </label>
+        </div>
+        <input type="submit" value="SEND">
+
+    </form>
+
+
+
+</body>
+</html>

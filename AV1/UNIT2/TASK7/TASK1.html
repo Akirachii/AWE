@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<head>
+    <title>Task 1</title>
+    <style>
+        body{
+            background-colour: rgb(247, 240, 238);
+        } 
+
+        .button{
+            background-colour: #bb8282;
+            colour: #3d1111;
+            padding: 10px;
+            border-radius: 10px;
+            -moz-border-radius: 10px;
+            -webkit-border-radius: 10px;
+            margin:15px
+        }
+
+        label {
+            padding: 12px 12px 12px 0;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="button"><h1>Task 1</h1></div>
+    <form action="" method="get" target="_blank">
+
+        <fieldset>
+
+            <legend>Form</legend>
+            <div>
+                <label for="high school">high school:</label>
+                <input id="high school" type="text" name="high school">
+            </div>
+            <div>
+                <label for="studies">studies:</label>
+                <input id="studies" type="text" name="studies">
+            </div>
+            <div>
+                <label for="name">name:</label>
+                <input id="name" type="text" name="name">
+            </div>
+            <div>
+                <label for="surnames">surnames:</label>
+                <input id="surnames" type="text" name="surnames">
+            </div>
+            <div>
+                <label for="iemail">Email:</label>
+                <input type="email" name="email" id="iemail">
+            </div>
+            <div>
+                <label for="colour">choose one colour:</label>
+                <input type="colour" name="colour" id="colour">
+            </div>
+            <div>
+            <label for="text"></label>
+            <textarea name="text" id="text" cols="47" rows="5" placeholder="Use this box please"></textarea>
+            </div>
+            
+
+            <label for="red"></label>
+            
+            <table>
+                <tr>
+                    <td>
+                        <input type="radio" name="red" id="red" value="red2g">2G
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="red" id="red" value="red3g">3G
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="red" id="red" value="red4g">4G
+                    </td>
+                </tr>
+            </table>    
+            
+            <div>
+                <label for="date">Choose a date:</label>
+                <input type="date" name="date" id="date">
+            </div>
+            
+        </fieldset>
+
+        <fieldset>
+            <legend>Please, complete this options</legend>
+            <div>
+                <label for="file">Choose a file:</label>
+                <input type="file" name="file" id="file">
+            </div>
+            <div>
+                <input list="conector">
+                <datalist id="conector">
+                    <option value="usb">USB</option>
+                    <option value="parallel">parallel</option>
+                    <option value="ps2">PS2</option>
+                </datalist>
+            </div>
+
+            <input type="radio" name="system" value="systemwindows">Windows
+            <input type="radio" name="system" value="systemmac">Mac
+            <input type="radio" name="system" value="systemlinux">Linux
+
+
+            <div>
+                <label for="date2">Choose a second date:</label>
+                <input type="date" name="date2" id="date2">
+            </div>
+
+        </fieldset>
+
+        <input type="submit" value="Enviar">
+    
+
+
+</body>
+</html>
